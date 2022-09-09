@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <section>
+        <div class="image-box">
+            <img src="register-img.avif">
+        </div>
+        <div class="content-box">
+            <div class="form-box">
+                <h2>WELCOME</h2>
+                <br>
+                <form>
+                    <input type="text" placeholder="username" class="input">
+                    <br><br>
+                    <input type="password" placeholder="password" class="input">
+                    <br><br>
+                    <input type="password" placeholder="repeat password" class="input">
+                    <br><br>
+                    <input type="text" placeholder="mobile number" class="input">
+                    
+                    <br><br><br>
+                    <a href="../index.html" class="login-btn">Register</a>
+                    <div class="desc">
+                        <p>Already have an account? <a href="#">Login Here</a> </p>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbySAbwvoG0PJXnvgmTXUN6NvN6GqZwrC-EuupzUDRSOhkDzDHY4yof5g341AIIeI7nwxg/exec'
+        const form = document.forms['login form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you! your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
