@@ -27,9 +27,9 @@
                     <div class="remember">
                         <label><input type="checkbox" name="">Remember me</label>
                     </div>
-                    <br>
-                    <a href="home.html" class="login-btn">Login</a>
                     <br><br>
+                    <input type="button" class="login-btn" onclick="location.href ='home.html';" value="Submit">
+                    <br>
                     <div class="desc">
                         <p>Are you a new user? <a href="register.html">Register Here</a> </p>
                     </div>
@@ -43,7 +43,6 @@
             </div>
         </div>
     </section>
-
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbySAbwvoG0PJXnvgmTXUN6NvN6GqZwrC-EuupzUDRSOhkDzDHY4yof5g341AIIeI7nwxg/exec'
         const form = document.forms['login form']
@@ -55,6 +54,7 @@
                 .then(() => { window.location.reload(); })
                 .catch(error => console.error('Error!', error.message))
         })
+        
     </script>
 </body>
 

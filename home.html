@@ -9,41 +9,35 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-container">
-            <div class="logo-container">
-                <img src="./home-resources/logo.png" alt="" id="logo">
-            </div>
-            
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li class="menu-list-items"> <a href="home.html">
-                            <button class="menu-list-items">
-                                HOME</button></a></li>
-                    <li class="menu-list-items"><a href="hist.html">
-                            <button class="menu-list-items">HISTORICAL</button></a></li>
-                    <li class="menu-list-items"><a href="nature.html">
-                            <button class="menu-list-items">NATURE</button></a>
-                    </li>
-                    <li class="menu-list-items"><a href="beach.html">
-                            <button class="menu-list-items">BEACHES</button></a></li>
-                    <li class="menu-list-items"><a href="wildlife.html">
-                            <button class="menu-list-items">WILDLIFE</button></a></li>
-                    <li class="menu-list-items"><a href="./aboutus/aboutus.html" target="_blank">
-                            <button class="menu-list-items">ABOUT US</button></a></li>
-                    <li class="menu-list-items"><a href="./contact-us/index.html" target="_blank">
-                            <button class="menu-list-items">CONTACT US</button></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <br><br>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="check-btn">
+            <i class="fa-solid fa-bars" style="color: white;"></i>
+        </label>
+        <label class="logo">LOGO</label>
+        <ul>
+            <li><a href="home.html" class="active">HOME</a></li>
+            <li><a href="hist.html">HISTORICAL</a></li>
+            <li><a href="nature.html">NATURE</a></li>
+            <li><a href="beach.html">BEACHES</a></li>
+            <li><a href="wildlife.html">WILDLIFE</a></li>
+            <li><a href="./aboutus/aboutus.html" target="_blank">ABOUT US</a></li>
+            <li><a href="./contact-us/index.html" target="_blank">CONTACT US</a></li>
+        </ul>
+    </nav>
+   
+    <br><br><br>
     <div class="container">
         <div class="content-container">
             <div class="featured-content">
@@ -139,54 +133,50 @@
                             <button class="trav-list-item-button">INFO</button></a>
                     </div>
                 </div>
-                <div class="trav-list-container">
-                    <h1 class="trav-list-title">WINTER</h1>
-                    <div class="trav-list-wrapper">
-                        <div class="trav-list">
-                            <div class="trav-list-items">
-                                <img class="trav-list-item-img" src="./home-resources/home-winter-img/Chamba.jpg"
-                                    alt="">
-                                <span class="trav-list-item-title">CHAMBA</span>
-                                <p class="trav-list-item-desc">One of the most famous hill stations in India that
-                                    holds a magical allure for travellers.A former princely state,
-                                    is the administrative headquarters of the district by the same name.</p>
-                                <a href="./winter/chamba/chamba.html" target="_blank">
-                                    <button class="trav-list-item-button">INFO</button></a>
-                            </div>
-                            <div class="trav-list-items">
-                                <img class="trav-list-item-img" src="./home-resources/home-winter-img/gulmarg.jpg"
-                                    alt="">
-                                <span class="trav-list-item-title">GULMARG</span>
-                                <p class="trav-list-item-desc">Gulmarg is the crowning glory of Jammu & Kashmir and
-                                    is located 2,650 meters above sea level. Known as the “Meadow of Flowers”,
-                                    it boasts of the world’s highest golf-course.</p>
-                                <a href="./winter/gulmarg/gulmarg.html" target="_blank">
-                                    <button class="trav-list-item-button">INFO</button></a>
-                            </div>
-                            <div class="trav-list-items">
-                                <img class="trav-list-item-img" src="./home-resources/home-winter-img/manali.jpg"
-                                    alt="">
-                                <span class="trav-list-item-title">MANALI</span>
-                                <p class="trav-list-item-desc">WNo wonder the towering peaks and verdant terrain of
-                                    Manali attracts adventure travellers,
-                                    with heli-skiing, hiking, mountaineering and river rafting the favored active
-                                    pursuits.</p>
-                                <a href="./winter/manali/manali.html" target="_blank">
-                                    <button class="trav-list-item-button">INFO</button></a>
-                            </div>
-                            <div class="trav-list-items">
-                                <img class="trav-list-item-img" src="./home-resources/home-winter-img/rann of kutch.jpg"
-                                    alt="">
-                                <span class="trav-list-item-title">RANN OF KUTCH</span>
-                                <p class="trav-list-item-desc"> Rann of Kutch is a massive expanse of cracked earth,
-                                    inland from the sea, that promises to take your breath away.</p>
-                                <a href="./winter/rann/rann of kutch.html" target="_blank">
-                                    <button class="trav-list-item-button">INFO</button></a>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="trav-list-container">
+            <h1 class="trav-list-title">WINTER</h1>
+            <div class="trav-list-wrapper">
+                <div class="trav-list">
+                    <div class="trav-list-items">
+                        <img class="trav-list-item-img" src="./home-resources/home-winter-img/Chamba.jpg" alt="">
+                        <span class="trav-list-item-title">CHAMBA</span>
+                        <p class="trav-list-item-desc">One of the most famous hill stations in India that
+                            holds a magical allure for travellers.</p>
+                        <a href="./winter/chamba/chamba.html" target="_blank">
+                            <button class="trav-list-item-button">INFO</button></a>
+                    </div>
+                    <div class="trav-list-items">
+                        <img class="trav-list-item-img" src="./home-resources/home-winter-img/gulmarg.jpg" alt="">
+                        <span class="trav-list-item-title">GULMARG</span>
+                        <p class="trav-list-item-desc">Gulmarg is the crowning glory of Jammu & Kashmir and
+                            is located 2,650 meters above sea level.</p>
+                        <a href="./winter/gulmarg/gulmarg.html" target="_blank">
+                            <button class="trav-list-item-button">INFO</button></a>
+                    </div>
+                    <div class="trav-list-items">
+                        <img class="trav-list-item-img" src="./home-resources/home-winter-img/manali.jpg" alt="">
+                        <span class="trav-list-item-title">MANALI</span>
+                        <p class="trav-list-item-desc">No wonder the towering peaks and verdant terrain of
+                            Manali attracts adventure travellers,
+                            with heli-skiing, hiking, and river rafting the favored active
+                            pursuits.</p>
+                        <a href="./winter/manali/manali.html" target="_blank">
+                            <button class="trav-list-item-button">INFO</button></a>
+                    </div>
+                    <div class="trav-list-items">
+                        <img class="trav-list-item-img" src="./home-resources/home-winter-img/rann of kutch.jpg" alt="">
+                        <span class="trav-list-item-title">RANN OF KUTCH</span>
+                        <p class="trav-list-item-desc"> Rann of Kutch is a massive expanse of cracked earth,
+                            inland from the sea, that promises to take your breath away.</p>
+                        <a href="./winter/rann/rann of kutch.html" target="_blank">
+                            <button class="trav-list-item-button">INFO</button></a>
                     </div>
                 </div>
-                <script>(function () { var pp = document.createElement('script'), ppr = document.getElementsByTagName('script')[0]; stid = 'UkNMSWRtNVJ1d0NaR0hMczJDZGsydz09'; pp.type = 'text/javascript'; pp.async = true; pp.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr); })();</script>
+            </div>
+        </div>
+        <script>(function () { var pp = document.createElement('script'), ppr = document.getElementsByTagName('script')[0]; stid = 'UkNMSWRtNVJ1d0NaR0hMczJDZGsydz09'; pp.type = 'text/javascript'; pp.async = true; pp.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr); })();</script>
 </body>
 
 </html>
