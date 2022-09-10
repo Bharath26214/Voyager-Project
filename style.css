@@ -101,6 +101,7 @@ font-family: 'Lato', sans-serif;
     color:red;
     text-shadow: 2px 2px 2px gray;
     text-decoration: underline;
+    margin-top:20px;
 }
 .trav-list-wrapper{
     position: relative;
