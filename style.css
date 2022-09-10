@@ -37,7 +37,6 @@ font-family: 'Lato', sans-serif;
     flex:6;
     color:white;
     width:60%;
-    box-shadow: 3px 3px 3px gray;
 }
 .menu-list{
     display: flex;
