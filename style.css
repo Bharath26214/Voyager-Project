@@ -1,6 +1,7 @@
 *{
     margin:0;
     background-color: black;
+    box-sizing: border-box;
 }
 body{
 font-family: 'Lato', sans-serif;
@@ -16,24 +17,27 @@ font-family: 'Lato', sans-serif;
     display: flex;
     align-items: center;
     height: 100%;
-    padding:0 50px;
+    padding:0 20px;
 }
 .logo-container{
+    display: inline-block;
     flex:1;
 }
 .logo-container img:hover{
     transform: scale(1.15);
+    transition: all 1s ease-in-out;
+    cursor:pointer;
 }
 #logo{
-    width:60%;
-    height: 95px;
+    width:70%;
+    height: 70%;
     object-fit: cover;
-    
 }
 .menu-container{
     flex:6;
     color:white;
     width:60%;
+    box-shadow: 3px 3px 3px gray;
 }
 .menu-list{
     display: flex;
@@ -41,10 +45,11 @@ font-family: 'Lato', sans-serif;
     font-family: 'Lato', sans-serif;
 }
 .menu-list-items{
-    margin:10px;
+    float: right;
+    margin:18px;
     color:white;
-    align-items: center;
-    
+    align-items: center;    
+    padding: 10px 0px;
 }
 .menu-list-items.active{
 font-weight: bold;
@@ -94,6 +99,8 @@ font-family: 'Lato', sans-serif;
 }
 .trav-list-title{
     color:red;
+    text-shadow: 2px 2px 2px gray;
+    text-decoration: underline;
 }
 .trav-list-wrapper{
     position: relative;
@@ -109,7 +116,7 @@ font-family: 'Lato', sans-serif;
     position: relative;
 }
 .trav-list-items:hover .trav-list-item-img{
- transform: scale(1.2);
+ transform: scale(1.15);
  margin:0 20px;
  opacity: 0.5;
 }
@@ -177,4 +184,64 @@ opacity: 1;
     color:white;
     
     font-size: 20px;
+}
+@media   (max-width:1250px) {
+    .trav-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 200px;
+        row-gap: 40px;
+        width:100%;
+        height: 100%;
+    }  
+    .trav-list-title{
+        margin-bottom:20px;
+    }
+    #logo{
+        width:70%;
+        height:70%;
+        object-fit: cover;
+    }
+    .menu-list-items{
+        margin: 15px;
+    }
+}
+@media (max-width:1160px){
+    .menu-list-items{
+        margin: 13px;
+    }
+
+}
+@media (max-width: 1050px){
+    .menu-list-items{
+        margin: 10px;
+    }
+}
+@media   (max-width:1000px) {
+    .trav-list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 200px;
+        row-gap: 40px;
+        width:100%;
+        height: 100%;
+    }  
+    .trav-list-title{
+        margin-bottom:20px;
+    }
+
+
+}
+@media   (max-width:750px) {
+    .trav-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 200px;
+        row-gap: 40px;
+        width:100%;
+        height: 100%;
+    }  
+    .trav-list-title{
+        margin-bottom:20px;
+    }
 }
