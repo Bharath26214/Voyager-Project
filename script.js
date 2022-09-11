@@ -53,7 +53,7 @@ function validate_contactus() {
     if(name == '') {
         alert('Please enter your name!!!')
     }
-    else if(email == '' || !email.includes('@')) {
+    else if(email == '' || !email.includes('@') || !email.includes('.')) {
         alert('Enter valid e-mail')
     }
     else if(mno == '' || mno.length < 10) {
