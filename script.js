@@ -44,3 +44,22 @@ function validate_register() {
         window.location.href='home.html';
     }
 }
+function validate_contactus() {
+    let name, email, mno;
+    name = document.getElementById('name').value;
+    email = document.getElementById('email').value;
+    mno = document.getElementById('mno').value;
+
+    if(name == '') {
+        alert('Please enter your name!!!')
+    }
+    else if(email == '' || !email.includes('@')) {
+        alert('Enter valid e-mail')
+    }
+    else if(mno == '' || mno.length < 10) {
+        alert('Enter valid mobile number');
+    }
+    else{
+        Subforms();
+    }
+}
