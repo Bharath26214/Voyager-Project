@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
+    <script src="script.js"></script>
     <title>Register</title>
 </head>
 
@@ -19,17 +20,16 @@
                 <h2>WELCOME</h2>
                 <br>
                 <form>
-                    <input type="text" placeholder="Username" class="input">
+                    <input type="text" id="username" placeholder="Username" class="input" required>
                     <br><br>
-                    <input type="password" placeholder="Password" class="input">
+                    <input type="password" id="psw" placeholder="Password" class="input" required>
                     <br><br>
-                    <input type="password" placeholder="Repeat Password" class="input">
+                    <input type="password" id="rpsw" placeholder="Confirm  Password" class="input" required>
                     <br><br>
-                    <input type="text" placeholder="Mobile Number" class="input">
-                    
+                    <input type="text" id="mno" placeholder="Mobile Number" class="input" required>
                     <br><br><br>
-                    <a href="home.html" class="login-btn">Register</a>
-                    <br><br>
+                    <input type="button" class="login-btn" onclick="validate_register()" value="Submit">
+                    <br>
                     <div class="desc">
                         <p>Already have an account? <a href="index.html">Login Here</a> </p>
                     </div>
